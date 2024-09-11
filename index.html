@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Información de Películas</title>
+    <title>Información de Películas</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Información de Películas</h1>
         <p>Introduce el título de una película y haz clic en el botón para obtener información.</p>
         <form>
-            <input type="text" placeholder="Escribe el título de la película">
+            <input type="text" placeholder="Escribe el título de la película" required>
             <button type="submit">Buscar</button>
         </form>
         <div class="result"></div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>

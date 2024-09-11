@@ -4,15 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Obtén los elementos del DOM
     const form = document.querySelector('form');
     const input = document.querySelector('input[type="text"]');
-    const result = document.createElement('div');
-    result.className = 'result';
-    document.querySelector('.container').appendChild(result);
+    const result = document.querySelector('.result');
 
     // Maneja el evento de envío del formulario
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // Evita el envío del formulario
 
-        const title = input.value;
+        const title = input.value.trim();
         if (title) {
             fetchMovieData(title);
         }
@@ -41,4 +39,3 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 });
-
