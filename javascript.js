@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Función para obtener los datos de la película
     function fetchMovieData(title) {
-        const apiKey = 'YOUR_API_KEY'; // Reemplaza con tu clave API de OMDB
+        const apiKey = 'f6d8b2a2'; // Reemplaza con tu clave API de OMDB
         const url = `https://www.omdbapi.com/?t=${encodeURIComponent(title)}&apikey=${apiKey}`;
 
         fetch(url)
